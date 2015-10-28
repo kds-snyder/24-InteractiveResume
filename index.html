@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Karen Snyder's Resume</title>
+
+  <!-- Bootstrap -->
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootswatch CSS file -->
+  <link href="css/bootswatch.cosmo.css" rel="stylesheet">
+  <!-- Custom CSS file -->
+  <link href="css/custom.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body ng-controller="SiteController">
+
+  
+  <nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">        
+      <a class="navbar-brand" href="#">Karen D. Snyder</a>
+    </div>   
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a ui-sref="home">Home</a></li>
+        <li>
+          <a ui-sref="portfolio">Portfolio</a></li>
+        <li>
+          <a ui-sref="resume">Resume</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </nav>
+    
+  <div class="container">
+    <div ui-view>
+
+    </div>
+  </div><!-- end container -->
+    
+
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/angular/angular.js" type="text/javascript"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js" type="text/javascript"></script>
+  <script src="js/app.js" type="text/javascript"></script>
+  <script src="js/site.ctrl.js" type="text/javascript"></script>
+  <script src="js/home.ctrl.js" type="text/javascript"></script>
+  <script src="js/resume.ctrl.js" type="text/javascript"></script>
+  <script src="js/portfolio.ctrl.js" type="text/javascript"></script>
+</body>
+
+</html>
